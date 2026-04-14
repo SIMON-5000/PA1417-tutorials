@@ -1,0 +1,7 @@
+[MESSAGES CONTROL]
+# pytest fixtures are injected by matching the parameter name to the fixture
+# function name. Pylint does not understand this mechanism and incorrectly
+# warns that the parameter shadows the outer fixture function.
+disable = redefined-outer-name,
+           unused-import,
+           fixme
